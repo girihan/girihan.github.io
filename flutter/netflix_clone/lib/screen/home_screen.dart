@@ -36,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return ListView(
       children: <Widget>[
         Stack(
+          
           children: <Widget>[
             CarouselImage(movies: movies),
             TopBar(),
