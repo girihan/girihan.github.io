@@ -58,6 +58,11 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 100,
               padding: EdgeInsets.all(8.0),
               margin: EdgeInsets.all(8.0),
+              alignment: Alignment.center,
+              child: Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.headline4,
+              ),
             ),
             Container(
               color: Colors.green[200],
@@ -80,19 +85,25 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
-                  Container(
-                    color: Colors.cyan[maxValue],
-                    width: 100,
-                    height: 100,
-                    padding: EdgeInsets.all(8.0),
-                    margin: EdgeInsets.all(8.0),
-                    alignment: Alignment.center,
-                    child: Text(
-                      "1",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 50,
+                  Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    elevation: 5.0,
+                    child: Container(
+                      color: Colors.cyan[maxValue],
+                      width: 100,
+                      height: 100,
+                      padding: EdgeInsets.all(8.0),
+                      margin: EdgeInsets.all(8.0),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "1",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 50,
+                        ),
                       ),
                     ),
                   ),
